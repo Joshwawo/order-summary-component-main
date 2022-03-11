@@ -1,0 +1,158 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+
+  --tittle: 'Big Shoulders Display', cursive;
+  --anotherOne: 'Red Hat Display', sans-serif;
+
+  --paleblue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  ---Pale-blue-bg: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --card-bg: rgba(255, 255, 255, 0.90);
+
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  /* font-size: 62.5%;  */
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(---Pale-blue-bg);
+
+}
+
+img {
+  max-width: 100%;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10rem;
+}
+
+
+.card {
+  align-items: center;
+  max-width: 290px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 auto;
+  background-color: var(--card-bg);
+
+
+}
+
+.card__img {
+  margin: -1rem;
+
+
+}
+
+
+.card__tittle {
+  padding-top: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 10px;
+  font-family: var(--anotherOne);
+  color: var(--Dark-blue);
+}
+
+.card__p {
+  text-align: center;
+  font-size: 12px;
+  font-family: var(--anotherOne);
+  color: rgba(168, 168, 168, 0.829);
+}
+
+.card__svg {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+  
+  
+  padding: 2pxrem;
+  margin: 2px;
+  gap: 1rem;
+
+}
+
+.card__svg--1 {}
+
+.card__svg--2 {
+  font-size: 15px;  
+}
+
+.card__svg--3 {
+
+  padding-top: 1rem;
+}
+
+.card__svg--3 a {
+
+  color: var(--Bright-blue);
+
+  font-size: 12px;
+  font-family: var(--anotherOne);
+  font-weight: bold;
+}
+
+
+.card__cancel {
+  padding-bottom: 1rem;
+
+}
+
+.card__pay--btn{
+  background: #3828e0;
+  border: 1px solid #556699;
+  border-radius: 10px;
+box-shadow: 0 15px 20px hsla(245, 75%, 52%, 0.3);
+  padding: 10px 50px;
+  color: white;
+  display: inline-block;
+  font-family: var(--anotherOne);
+  text-align: center;
+  cursor: pointer;
+}
+
+.card__pay {
+  
+  padding: 1rem;
+  
+}
+
+.card__cancel--btn{
+  background: none;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  padding: 9px 70px;
+  color: black;
+  display: inline-block;
+  font-family: var(--anotherOne);
+  text-align: center;
+  opacity: 0.6;
+  cursor: pointer;
+
+}
